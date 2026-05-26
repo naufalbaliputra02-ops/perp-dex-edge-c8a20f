@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=1280,height=800">
+<title>Perp DEX Trading</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:#0a0f1e;color:#e2e8f0;padding:32px}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+h1{font-size:24px;background:linear-gradient(90deg,#34d399,#ef4444,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}
+.stat{border-radius:12px;padding:20px;text-align:center;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06)}
+.stat .val{font-size:28px;font-weight:700}
+.stat .lbl{font-size:12px;color:#64748b;margin-top:4px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{border-radius:12px;padding:20px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06)}
+.card h3{font-size:14px;color:#94a3b8;margin-bottom:16px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{color:#64748b;text-align:left;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+td{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.green{color:#34d399}.red{color:#ef4444}.yellow{color:#fbbf24}.blue{color:#60a5fa}
+.pnl{font-weight:600}
+.pos-bar{height:4px;border-radius:2px;margin-top:4px}
+</style></head>
+<body>
+<div class="header"><h1>📈 Perp DEX Trading Terminal</h1><span style="color:#34d399;font-size:12px">Powered by MiMo AI · Hyperliquid · dYdX · GMX</span></div>
+<div class="stats">
+<div class="stat"><div class="val" style="color:#34d399">$2,841</div><div class="lbl">24h PnL</div></div>
+<div class="stat"><div class="val" style="color:#60a5fa">$48.2K</div><div class="lbl">Open Positions</div></div>
+<div class="stat"><div class="val" style="color:#fbbf24">3.2x</div><div class="lbl">Avg Leverage</div></div>
+<div class="stat"><div class="val" style="color:#ef4444">0</div><div class="lbl">Liquidations</div></div>
+</div>
+<div class="grid2">
+<div class="card"><h3>💼 Open Positions</h3>
+<table><tr><th>Pair</th><th>Side</th><th>Size</th><th>PnL</th><th>Liq</th></tr>
+<tr><td>ETH-USD</td><td class="green">LONG</td><td>12.4 ETH</td><td class="green">+$1,842</td><td class="red">$2,410</td></tr>
+<tr><td>BTC-USD</td><td class="green">LONG</td><td>0.8 BTC</td><td class="green">+$624</td><td class="red">$48,200</td></tr>
+<tr><td>SOL-USD</td><td class="red">SHORT</td><td>280 SOL</td><td class="green">+$375</td><td class="red">$168</td></tr>
+</table></div>
+<div class="card"><h3>🔥 Market Overview</h3>
+<div style="font-size:13px">
+<div style="display:flex;justify-content:space-between;margin-bottom:10px"><span>ETH-USD</span><span class="green">$3,012</span><span style="color:#64748b">+2.4%</span></div>
+<div class="pos-bar" style="background:linear-gradient(90deg,#34d399 60%,#ef4444 60%)"></div>
+<div style="display:flex;justify-content:space-between;margin-bottom:10px;margin-top:12px"><span>BTC-USD</span><span class="green">$68,420</span><span style="color:#64748b">+1.8%</span></div>
+<div class="pos-bar" style="background:linear-gradient(90deg,#34d399 55%,#ef4444 55%)"></div>
+<div style="display:flex;justify-content:space-between;margin-bottom:10px;margin-top:12px"><span>SOL-USD</span><span class="red">$184</span><span style="color:#64748b">+8.1%</span></div>
+<div class="pos-bar" style="background:linear-gradient(90deg,#34d399 70%,#ef4444 70%)"></div>
+<div style="display:flex;justify-content:space-between;margin-bottom:10px;margin-top:12px"><span>ARB-USD</span><span class="red">$1.24</span><span style="color:#64748b">-1.2%</span></div>
+<div class="pos-bar" style="background:linear-gradient(90deg,#34d399 45%,#ef4444 45%)"></div>
+</div></div>
+</div></body></html>
